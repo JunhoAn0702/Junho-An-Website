@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Navbar, Nav, NavItem} from 'react-bootstrap';
 import { BrowserRouter as Router, Route, Link, NavLink } from 'react-router-dom';
+import resume from '../../Resume/Resume.pdf';
 
 class NavBar extends Component {
   constructor(props) {
@@ -23,6 +24,7 @@ class NavBar extends Component {
       window.open("https://www.linkedin.com/in/junho-an-a83975a9/");
     }
     else if(selectedKey == 4) {
+      window.open(resume);
     }
   }
 
@@ -33,7 +35,7 @@ class NavBar extends Component {
         <Navbar>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="/">Junho An</a>
+              <a href="/Junho-An-Website/">Junho An</a>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>

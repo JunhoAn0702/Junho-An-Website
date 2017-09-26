@@ -1,5 +1,6 @@
 {
   "name": "junhoanweb",
+  "homepage": "https://JunhoAn0702.github.io/Junho-An-Website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -34,6 +35,7 @@
     "extract-text-webpack-plugin": "1.0.1",
     "file-loader": "^0.10.0",
     "fs-extra": "0.30.0",
+    "gh-pages": "^1.0.0",
     "html-webpack-plugin": "2.24.0",
     "http-proxy-middleware": "0.17.3",
     "image-webpack-loader": "^3.4.1",
@@ -53,7 +55,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "deploy" : "npm run build&&gh-pages -d build"
   },
   "jest": {
     "collectCoverageFrom": [
